@@ -1,0 +1,99 @@
+%% 美赛模板：正文部分
+
+\documentclass[12pt]{article}  % 官方要求字号不小于 12 号，此处选择 12 号字体
+\usepackage{xtureport}  % 载入 Xtureport 模板文件
+
+\title{研究生学术科研工作周汇报模板}  % 标题
+\author{袁海专}
+\weekno{1}  %%% 第1次汇报
+
+
+\begin{document}
+
+\maketitle 
+%\tableofcontents  % 生成目录
+
+
+% 正文开始
+\section{中文示例}
+\subsection{代码示例}
+\lstinputlisting[language=C++]{./codes/xtureport-matlab.m}
+
+\subsection{公式示例}
+\begin{equation}\label{eq:heat}
+\frac{\partial u}{\partial t} - a^2 \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} \right) = f(x, y, z, t)
+\end{equation}
+
+\subsection{插图示例}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.2\textwidth]{./figures/xtu-fig-logo.pdf} \quad 
+  \includegraphics[width=.6\textwidth]{./figures/xtu-text-logo.pdf}
+\caption{湘潭大学}\label{fig:result}
+\end{figure}
+
+\subsection{列表示例}
+\begin{enumerate}[\bfseries 1.]
+    \item 我们做了 ...
+    \item 我们做了 ...
+    \item 我们做了 ...
+\end{enumerate}
+
+\subsection{表格示例}
+\begin{table}[!htbp]
+\begin{center}
+\caption{Notations}
+\begin{tabular}{cl}
+	\toprule
+	\multicolumn{1}{m{3cm}}{\centering Symbol}
+	&\multicolumn{1}{m{8cm}}{\centering Definition}\\
+	\midrule
+	$A$&the first one\\
+	$b$&the second one\\
+	$\alpha$ &the last one\\
+	\bottomrule
+\end{tabular}\label{tb:notation}
+\end{center}
+\end{table}
+
+
+\section{Demo in English}
+\subsection{Mathematical Model}
+The detail can be described by equation \eqref{eq:heat}:
+\begin{equation}\label{eq:heat}
+\frac{\partial u}{\partial t} - a^2 \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} \right) = f(x, y, z, t)
+\end{equation}
+
+\subsection{Conlusions}
+The results are shown in Figure \ref{fig:result}, ... 
+
+
+% 以下为信件/备忘录部分，不需要可自行去掉
+% 如有需要可将整个 letter 环境移动到文章开头或中间
+% 请在后一个花括号内填写信件（Letter）或备忘录（Memorandum）标题
+%\begin{letter}{Memorandum}
+%\begin{flushleft}  % 左对齐环境，无首行缩进
+%\textbf{To:} Heishan Yan\\
+%\textbf{From:} Team XXXXXXX\\
+%\textbf{Date:} October 1st, 2019\\
+%\textbf{Subject:} A better choice than MS Word: \LaTeX
+%\end{flushleft}
+%In the memo, we 
+%Firstly, \ldots
+%\end{letter}
+
+
+% 参考文献，此处以 MLA 引用格式为例
+\begin{thebibliography}{99}
+\bibitem{1} Einstein, A., Podolsky, B., \& Rosen, N. (1935). Can quantum-mechanical description of physical reality be considered complete?. \emph{Physical review}, 47(10), 777.
+\bibitem{2} \emph{A simple, easy \LaTeX\ template for MCM/ICM: Xtureport}. (2018). Retrieved December 1, 2019, from\url{https://www.cnblogs.com/xjtu-blacksmith/p/xtureport.html}
+\end{thebibliography}
+
+
+% 以下为附录内容
+% 如您的论文中不需要附录，请自行删除
+%\begin{subappendices}  % 附录环境
+%\section{Appendix A: Further on \LaTeX}
+%\end{subappendices}
+
+\end{document}  % 结束
